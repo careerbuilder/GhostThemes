@@ -1,0 +1,111 @@
+<nav id="desktop-nav">
+    <ul>
+        <li>
+            <a href="/">
+                <i class="icon ion-ios-home-outline"></i>
+                <p>Home</p>
+            </a>
+        </li>
+        {{#foreach navigation}}
+            <li>
+                <a href="{{url absolute="true"}}">
+                    <i class="icon ion-ios-paper-outline"></i>
+                    <p>{{label}}</p>
+                </a>
+            </li>
+        {{/foreach}}
+        <li>
+            <a href="/feed" target="_blank">
+                <i class="icon ion-social-rss-outline"></i>
+                <p>RSS</p>
+            </a>
+        </li>
+    </ul>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/careerbuilder" target="_blank">
+                    <i class="icon ion-social-github-outline"></i>
+                    <p>GitHub</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/workatcb" target="_blank">
+                    <i class="icon ion-social-twitter-outline"></i>
+                    <p>@WorkAtCB</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/workatcareerbuilder" target="_blank">
+                    <i class="icon ion-social-facebook-outline"></i>
+                    <p>Work at CareerBuilder</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- //TODO: Implement a weekly subscription service
+    <form action="http://codiqa.createsend.com/t/t/s/thodi/" class="email-digest" method="post">
+        <label for="cm-thodi-thodi">
+            <p>Sign up for the weekly Learn Digest!</p>
+        </label>
+        <div class="digest-wrapper">
+            <input name="cm-thodi-thodi" placeholder="Email address" required="" type="email">
+            <input type="submit" value="Go">
+        </div>
+    </form>
+    -->
+    <!-- Display success messsage after user clicks on Go button
+    <div class="email-digest-success">
+        <p>Thanks for signing up.</p>
+    </div>
+    -->
+</nav>
+<ul class="menuHamburger clearfix" role="navigation">
+
+    <li class="categories dropdown">
+        <a class="icon" data-dropdown="site-map-dropdown" data-render="renderSiteMap" href="#" title="go to another topic list or category" id="site-map">
+            <i class="icon ion-navicon-round" aria-hidden="true"></i>
+        </a>
+    </li>
+    <section class="d-dropdown" id="site-map-dropdown" >
+        <ul class="location-links">
+            <li>
+                <a href="/">
+                    <i class="icon ion-ios-home-outline"></i>Home
+                </a>
+            </li>
+            {{#foreach navigation}}
+                <li>
+                    <a href="{{url absolute="true"}}">
+                        <i class="icon ion-ios-paper-outline"></i>{{label}}
+                    </a>
+                </li>
+            {{/foreach}}
+            <li>
+                <a href="/feed" target="_blank">
+                    <i class="icon ion-social-rss-outline"></i>RSS
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="https://github.com/careerbuilder" target="_blank">
+                    <i class="icon ion-social-github-outline"></i>
+                    GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/workatcb" target="_blank">
+                    <i class="icon ion-social-twitter-outline"></i>
+                    @WorkAtCB
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/workatcareerbuilder" target="_blank">
+                    <i class="icon ion-social-facebook-outline"></i>
+                    Work at CareerBuilder
+                </a>
+            </li>
+
+        </ul>
+    </section>
+</ul>
